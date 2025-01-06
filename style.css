@@ -1,0 +1,151 @@
+:root{
+    --primary-color: red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: black;
+    color:#999;
+}
+
+ul{
+    list-style: none;
+}
+
+h2,h2,h3,h4{
+    color:white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+p{
+    margin: 0.5rem 0;
+}
+
+img{
+    width:100%;
+}
+
+.showcase{
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    /* background: url('../background.jpg') no-repeat center center/cover; */
+
+    background: url('../background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -2 ;
+}
+
+.showcase::after{
+    content:"";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0,0,0,0.6)
+}
+
+.showcaseTop{
+    position: relative;
+    height: 90px;
+    background-color:rgba(0,0,0,0.3);
+
+}
+
+.showcaseTop img{
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.showcaseTop a{
+    position: absolute;
+    top: 30%;
+    right: 0;
+    margin-right: 40px;
+}
+
+.showcaseContent{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.showcaseContent h1{
+    margin-top: 12rem;
+    color: white;
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height:0.3;   /* em*/
+    margin-bottom: 1.5rem;
+}
+
+
+.showcaseContent p{
+    text-align: center;
+    font-size:0.8rem ;
+    font-weight:500;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+
+.btn{
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none; 
+    box-shadow: 0 1px 0 rgba(0,0,0,0.45);
+    border-radius: 2px;
+}
+
+.btn:hover{
+    opacity: 0.5;
+}
+
+.btn-rounded{
+    border-radius: 5px;
+}
+
+.btn-xl{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+}
+
+
+
+.btn-lg{
+    font-size: 1rem;
+    padding: 0.8rem 1.3rem;
+    text-transform: uppercase;
+}
